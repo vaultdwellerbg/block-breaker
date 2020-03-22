@@ -3050,7 +3050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paddle: {fileID: 2101580466}
   xPush: 2
-  yPush: 15
+  yPush: 10
 --- !u!1001 &2118354718
 PrefabInstance:
   m_ObjectHideFlags: 0
