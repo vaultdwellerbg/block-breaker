@@ -137,6 +137,12 @@ MonoBehaviour:
   paddle: {fileID: 0}
   xPush: 2
   yPush: 10
+  sounds:
+  - {fileID: 8300000, guid: 9c2e883934551e149b6bced966b97cd9, type: 3}
+  - {fileID: 8300000, guid: 153505e85851f22419ad45530e7f4f4c, type: 3}
+  - {fileID: 8300000, guid: 90fb2adbfbecbef4db059324a59adc09, type: 3}
+  - {fileID: 8300000, guid: c507b00a32bd7a04e81f9df4f4e81927, type: 3}
+  - {fileID: 8300000, guid: 52d2e14aac633fb448cd72abd1f32e94, type: 3}
 --- !u!82 &1444636509
 AudioSource:
   m_ObjectHideFlags: 0
@@ -147,7 +153,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 153505e85851f22419ad45530e7f4f4c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
