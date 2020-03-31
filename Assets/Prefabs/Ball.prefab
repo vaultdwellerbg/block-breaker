@@ -138,11 +138,10 @@ MonoBehaviour:
   xPush: 2
   yPush: 10
   sounds:
-  - {fileID: 8300000, guid: 9c2e883934551e149b6bced966b97cd9, type: 3}
+  - {fileID: 8300000, guid: 52d2e14aac633fb448cd72abd1f32e94, type: 3}
   - {fileID: 8300000, guid: 153505e85851f22419ad45530e7f4f4c, type: 3}
   - {fileID: 8300000, guid: 90fb2adbfbecbef4db059324a59adc09, type: 3}
   - {fileID: 8300000, guid: c507b00a32bd7a04e81f9df4f4e81927, type: 3}
-  - {fileID: 8300000, guid: 52d2e14aac633fb448cd72abd1f32e94, type: 3}
 --- !u!82 &1444636509
 AudioSource:
   m_ObjectHideFlags: 0
