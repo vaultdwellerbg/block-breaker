@@ -871,18 +871,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 563444885}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &600706062 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2512375166863544073, guid: ca1017de1f1a78d42b02f958534e726a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2512375166280139527}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470062a2a0bb95742b01870d1395562b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &695539212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1834,6 +1822,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1851249237}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993202968 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 977571800, guid: 499df882d0ae83c48a0508ec9d2b9248,
+    type: 3}
+  m_PrefabInstance: {fileID: 8160901257239896932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2101580466 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6880686138509235204, guid: 9263ca6b8bbfdf24c8ca5fbb10dbd245,
@@ -2551,6 +2551,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7107238049923614575, guid: d25d95d014ca0134a8e130065962139d,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1993202968}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d25d95d014ca0134a8e130065962139d, type: 3}
 --- !u!1001 &8160901257239896932
@@ -2670,10 +2675,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8160901259034130073, guid: 499df882d0ae83c48a0508ec9d2b9248,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 600706062}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 499df882d0ae83c48a0508ec9d2b9248, type: 3}
