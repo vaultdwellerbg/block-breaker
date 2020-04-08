@@ -7,13 +7,13 @@ public class Block : MonoBehaviour
 	[SerializeField] AudioClip destroySound;
 
 	Level level;
-	GameStatus gameStatus;
+	GameSession gameSession;
 
 	private void Start()
 	{
 		level = FindObjectOfType<Level>();
 		level.CountBreakableBlocks();
-		gameStatus = FindObjectOfType<GameStatus>();
+		gameSession = FindObjectOfType<GameSession>();
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -24,7 +24,7 @@ public class Block : MonoBehaviour
 	private void DestroyBlock()
 	{
 		level.BlockDestroyed();
-		gameStatus.AddToScore();
+		gameSession.AddToScore();
 		AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position);
 		Destroy(gameObject);
 	}
