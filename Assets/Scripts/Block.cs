@@ -5,6 +5,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
 	[SerializeField] AudioClip destroySound;
+	[SerializeField] GameObject destroyVFXPrefab;
 
 	Level level;
 	GameSession gameSession;
@@ -27,5 +28,12 @@ public class Block : MonoBehaviour
 		gameSession.AddToScore();
 		AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position);
 		Destroy(gameObject);
+		TriggerDestroyVFX();
+	}
+
+	private void TriggerDestroyVFX()
+	{
+		GameObject destroyVFX = Instantiate(destroyVFXPrefab, transform.position, transform.rotation);
+		Destroy(destroyVFX, 1f);
 	}
 }
