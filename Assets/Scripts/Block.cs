@@ -8,6 +8,8 @@ public class Block : MonoBehaviour
 
 	[SerializeField] AudioClip destroySound;
 	[SerializeField] GameObject destroyVFXPrefab;
+	[SerializeField] int maxHits;
+	[SerializeField] int timesHit; // TODO serialized for debug purposes
 
 	Level level;
 	GameSession gameSession;
@@ -30,6 +32,15 @@ public class Block : MonoBehaviour
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (tag == BREAKABLE)
+		{
+			RegisterHit();
+		}
+	}
+
+	private void RegisterHit()
+	{
+		timesHit++;
+		if (timesHit >= maxHits)
 		{
 			DestroyBlock();
 		}
