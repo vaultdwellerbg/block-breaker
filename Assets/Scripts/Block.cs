@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+	const string BREAKABLE = "Breakable";
+
 	[SerializeField] AudioClip destroySound;
 	[SerializeField] GameObject destroyVFXPrefab;
 
@@ -12,14 +14,25 @@ public class Block : MonoBehaviour
 
 	private void Start()
 	{
-		level = FindObjectOfType<Level>();
-		level.CountBreakableBlocks();
 		gameSession = FindObjectOfType<GameSession>();
+		level = FindObjectOfType<Level>();
+		CountBreakableBlocks();
+	}
+
+	private void CountBreakableBlocks()
+	{
+		if (tag == BREAKABLE)
+		{
+			level.CountBlocks();
+		}
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		DestroyBlock();
+		if (tag == BREAKABLE)
+		{
+			DestroyBlock();
+		}
 	}
 
 	private void DestroyBlock()
