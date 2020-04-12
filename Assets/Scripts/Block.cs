@@ -10,6 +10,7 @@ public class Block : MonoBehaviour
 	[SerializeField] GameObject destroyVFXPrefab;
 	[SerializeField] int maxHits;
 	[SerializeField] int timesHit; // TODO serialized for debug purposes
+	[SerializeField] Sprite[] hitSprites;
 
 	Level level;
 	GameSession gameSession;
@@ -44,6 +45,10 @@ public class Block : MonoBehaviour
 		{
 			DestroyBlock();
 		}
+		else 
+		{
+			ShowNextHitSprite();
+		}
 	}
 
 	private void DestroyBlock()
@@ -59,5 +64,10 @@ public class Block : MonoBehaviour
 	{
 		GameObject destroyVFX = Instantiate(destroyVFXPrefab, transform.position, transform.rotation);
 		Destroy(destroyVFX, 1f);
+	}
+
+	private void ShowNextHitSprite()
+	{
+		GetComponent<SpriteRenderer>().sprite = hitSprites[timesHit - 1];
 	}
 }
