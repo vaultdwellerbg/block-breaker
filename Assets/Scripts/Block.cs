@@ -8,7 +8,6 @@ public class Block : MonoBehaviour
 
 	[SerializeField] AudioClip destroySound;
 	[SerializeField] GameObject destroyVFXPrefab;
-	[SerializeField] int maxHits;
 	[SerializeField] int timesHit; // TODO serialized for debug purposes
 	[SerializeField] Sprite[] hitSprites;
 
@@ -41,6 +40,7 @@ public class Block : MonoBehaviour
 	private void RegisterHit()
 	{
 		timesHit++;
+		int maxHits = hitSprites.Length + 1;
 		if (timesHit >= maxHits)
 		{
 			DestroyBlock();
