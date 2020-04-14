@@ -68,6 +68,14 @@ public class Block : MonoBehaviour
 
 	private void ShowNextHitSprite()
 	{
-		GetComponent<SpriteRenderer>().sprite = hitSprites[timesHit - 1];
+		Sprite nextHitSprite = hitSprites[timesHit - 1];
+		if (nextHitSprite != null)
+		{
+			GetComponent<SpriteRenderer>().sprite = nextHitSprite;
+		}
+		else
+		{
+			Debug.LogError("Block sprite is missing from array in " + gameObject.name);
+		}
 	}
 }
