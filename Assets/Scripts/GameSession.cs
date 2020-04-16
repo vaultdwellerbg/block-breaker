@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameSession : MonoBehaviour
@@ -41,9 +40,22 @@ public class GameSession : MonoBehaviour
         Time.timeScale = gameSpeed;
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnEnable()
     {
-        ResetGameSpeed();
+        SceneManager.sceneLoaded += OnLevelLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLevelLoaded;
+    }
+
+    private void OnLevelLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (initialGameSpeed != 0f)
+        {
+            ResetGameSpeed();
+        }    
     }
 
     public void AddToScore()
