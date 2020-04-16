@@ -7,6 +7,7 @@ public class Block : MonoBehaviour
 	const string BREAKABLE = "Breakable";
 
 	[SerializeField] AudioClip destroySound;
+	[Range(0.0f, 1f)] [SerializeField] float volume = 0.4f;
 	[SerializeField] GameObject destroyVFXPrefab;
 	[SerializeField] int timesHit; // TODO serialized for debug purposes
 	[SerializeField] Sprite[] hitSprites;
@@ -55,7 +56,7 @@ public class Block : MonoBehaviour
 	{
 		level.BlockDestroyed();
 		gameSession.AddToScore();
-		AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position);
+		AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position, volume);
 		Destroy(gameObject);
 		TriggerDestroyVFX();
 	}

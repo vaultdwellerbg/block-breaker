@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4397696698930854608}
   - component: {fileID: 4397696698930854623}
   m_Layer: 0
-  m_Name: BreakableBlock
+  m_Name: 1HitBlock
   m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,8 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c2a799f1d28f4f962137032b170be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroySound: {fileID: 8300000, guid: 9c2e883934551e149b6bced966b97cd9, type: 3}
+  destroySound: {fileID: 8300000, guid: 4972e4a81a97ebf4f89722669bcf912d, type: 3}
   destroyVFXPrefab: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
-  maxHits: 1
   timesHit: 0
   hitSprites: []
