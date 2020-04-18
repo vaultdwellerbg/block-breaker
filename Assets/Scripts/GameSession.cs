@@ -8,6 +8,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] int pointsPerBlock = 5;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int currentScore = 0;
+    [SerializeField] int lives = 2;
 
     [Header("Speedup Settings")]
     [SerializeField] int pointsToRaiseSpeed = 25;
@@ -64,6 +65,16 @@ public class GameSession : MonoBehaviour
         scoreText.text = currentScore.ToString();
 
         AdjustGameSpeed();
+    }
+
+    public void TakeLife()
+    {
+        lives--;
+    }
+
+    public bool AreLivesLeft()
+    {
+        return lives > 0;
     }
 
     private void AdjustGameSpeed()

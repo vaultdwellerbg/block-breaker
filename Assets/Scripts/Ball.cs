@@ -29,6 +29,11 @@ public class Ball : MonoBehaviour
         LaunchOnMouseClick();
     }
 
+    public void ResetBall()
+    {
+        isLaunched = false;
+    }
+
     private void LockBallToPaddle()
     {
         Vector2 paddlePos = new Vector2(paddle.transform.position.x, paddle.transform.position.y);
