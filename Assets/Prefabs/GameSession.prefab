@@ -48,6 +48,8 @@ MonoBehaviour:
   pointsPerBlock: 5
   scoreText: {fileID: 356189510}
   currentScore: 0
+  pointsToRaiseSpeed: 40
+  speedRaise: 0.1
 --- !u!1001 &796887710
 PrefabInstance:
   m_ObjectHideFlags: 0
