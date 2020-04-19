@@ -9,6 +9,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int currentScore = 0;
     [SerializeField] int lives = 2;
+    [SerializeField] bool enableAutoPlay = false;
 
     [Header("Speedup Settings")]
     [SerializeField] int pointsToRaiseSpeed = 25;
@@ -75,6 +76,11 @@ public class GameSession : MonoBehaviour
     public bool AreLivesLeft()
     {
         return lives > 0;
+    }
+
+    public bool IsAutoPlayEnabled()
+    {
+        return enableAutoPlay;
     }
 
     private void AdjustGameSpeed()

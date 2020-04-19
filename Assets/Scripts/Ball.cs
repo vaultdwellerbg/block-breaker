@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
         if (isLaunched) return;
 
         LockBallToPaddle();
-        LaunchOnMouseClick();
+        Launch();
     }
 
     public void ResetBall()
@@ -40,9 +40,9 @@ public class Ball : MonoBehaviour
         transform.position = paddlePos + paddleToBallVector;
     }
 
-    private void LaunchOnMouseClick() 
+    private void Launch() 
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || FindObjectOfType<GameSession>().IsAutoPlayEnabled())
         {
             isLaunched = true;
             rigidBody.velocity = new Vector2(xPush, yPush);
