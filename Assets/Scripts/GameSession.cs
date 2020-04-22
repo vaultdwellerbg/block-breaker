@@ -7,6 +7,7 @@ public class GameSession : MonoBehaviour
     [Range(0.5f, 2f)] [SerializeField] float gameSpeed = 1f;
     [SerializeField] int pointsPerBlock = 5;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI livesCountText;
     [SerializeField] int currentScore = 0;
     [SerializeField] int lives = 2;
     [SerializeField] bool enableAutoPlay = false;
@@ -34,6 +35,7 @@ public class GameSession : MonoBehaviour
     private void Start()
     {
         scoreText.text =  currentScore.ToString();
+        livesCountText.text = lives.ToString();
         initialGameSpeed = gameSpeed;
     }
 
@@ -71,6 +73,7 @@ public class GameSession : MonoBehaviour
     public void TakeLife()
     {
         lives--;
+        livesCountText.text = lives.ToString();
     }
 
     public bool AreLivesLeft()

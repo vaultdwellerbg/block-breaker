@@ -1152,21 +1152,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 356189510, guid: d25d95d014ca0134a8e130065962139d, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 356189510, guid: d25d95d014ca0134a8e130065962139d, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 356189510, guid: d25d95d014ca0134a8e130065962139d, type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 356189510, guid: d25d95d014ca0134a8e130065962139d, type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
+    - target: {fileID: 1294712214, guid: d25d95d014ca0134a8e130065962139d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -54.19995
       objectReference: {fileID: 0}
     - target: {fileID: 7107238049923614572, guid: d25d95d014ca0134a8e130065962139d,
         type: 3}
@@ -1227,16 +1215,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7107238049923614575, guid: d25d95d014ca0134a8e130065962139d,
-        type: 3}
-      propertyPath: enableAutoPlay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7107238049923614575, guid: d25d95d014ca0134a8e130065962139d,
-        type: 3}
-      propertyPath: gameSpeed
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8160901258412877974, guid: d25d95d014ca0134a8e130065962139d,
         type: 3}
