@@ -1233,6 +1233,11 @@ PrefabInstance:
       propertyPath: enableAutoPlay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7107238049923614575, guid: d25d95d014ca0134a8e130065962139d,
+        type: 3}
+      propertyPath: gameSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8160901258412877974, guid: d25d95d014ca0134a8e130065962139d,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2886,5 +2891,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6880686137112757944, guid: 9263ca6b8bbfdf24c8ca5fbb10dbd245, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9263ca6b8bbfdf24c8ca5fbb10dbd245, type: 3}
