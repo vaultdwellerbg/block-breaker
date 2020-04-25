@@ -2726,6 +2726,26 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1693118713}
+    - target: {fileID: 5591191186864671199, guid: 6dbc5d1eb17e361498fcecdb5e962b56,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591191186864671199, guid: 6dbc5d1eb17e361498fcecdb5e962b56,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591191186864671199, guid: 6dbc5d1eb17e361498fcecdb5e962b56,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4493592
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591191186864671199, guid: 6dbc5d1eb17e361498fcecdb5e962b56,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4493592
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dbc5d1eb17e361498fcecdb5e962b56, type: 3}
 --- !u!1001 &6216401590923690180
