@@ -436,8 +436,9 @@ MonoBehaviour:
   scoreText: {fileID: 356189510}
   livesCountText: {fileID: 1788852269}
   currentScore: 0
-  lives: 3
+  lives: 5
   enableAutoPlay: 0
+  enableSpeedup: 0
   pointsToRaiseSpeed: 40
   speedRaise: 0.1
 --- !u!1001 &796887710

@@ -13,6 +13,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] bool enableAutoPlay = false;
 
     [Header("Speedup Settings")]
+    [SerializeField] bool enableSpeedup = true;
     [SerializeField] int pointsToRaiseSpeed = 25;
     [Range(0.0f, 1f)] [SerializeField] float speedRaise = 0.1f;
 
@@ -67,7 +68,10 @@ public class GameSession : MonoBehaviour
         currentScore += pointsPerBlock;
         scoreText.text = currentScore.ToString();
 
-        AdjustGameSpeed();
+        if (enableSpeedup)
+        {
+            AdjustGameSpeed();
+        }
     }
 
     public void TakeLife()
