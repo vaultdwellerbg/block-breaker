@@ -4,7 +4,7 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-    [Range(0.5f, 2f)] [SerializeField] float gameSpeed = 1f;
+    [Range(0.5f, 5f)] [SerializeField] float gameSpeed = 1f;
     [SerializeField] int pointsPerBlock = 5;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI livesCountText;
