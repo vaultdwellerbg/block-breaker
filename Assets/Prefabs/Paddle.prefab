@@ -119,7 +119,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.66}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -131,22 +131,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2346939, y: 0.12244898}
-      - {x: 1.1734693, y: 0.23979591}
-      - {x: 1.0357143, y: 0.3265306}
-      - {x: -0.0093250275, y: 0.3894373}
-      - {x: -1.0102041, y: 0.3265306}
-      - {x: -1.0969387, y: 0.2908163}
-      - {x: -1.2040817, y: 0.18877551}
-      - {x: -1.244898, y: 0.12244898}
-      - {x: -1.244898, y: -0.13265306}
-      - {x: -1.1632652, y: -0.22959183}
-      - {x: -1.0918367, y: -0.2908163}
-      - {x: -1, y: -0.3265306}
-      - {x: 1.0459183, y: -0.3265306}
-      - {x: 1.1173469, y: -0.31632653}
-      - {x: 1.244898, y: -0.13265306}
-      - {x: 1.244898, y: 0.08163265}
+    - - {x: -0.89331865, y: -0.3265306}
+      - {x: -0.0260849, y: -0.30235705}
+      - {x: 0.9128742, y: -0.3311434}
 --- !u!114 &6880686138509235204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,12 +156,12 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6880686138509235227}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000042366814, y: -0.39}
-  m_Size: {x: 2.0000007, y: 1.54}
+  m_Offset: {x: 0.002859355, y: 0.004598379}
+  m_Size: {x: 2.4746625, y: 0.6478844}
   m_Direction: 1
